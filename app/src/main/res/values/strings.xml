@@ -1,0 +1,180 @@
+<resources>
+    <string name="app_name">Fikom Mobile</string>
+    <string name="google_api_key">AIzaSyAo9c7kIXdXwcmAg0HLDWlszq-Zk2QtY-I</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="judul_fakultas">Fakultas Ilmu Komunikasi</string>
+    <string name="judul_prodi">Program Studi Ilmu Komunikasi</string>
+    <string name="visi_fakultas">Menjadi Fakultas Ilmu Komunikasi yang unggul di Indonesia
+dengan standar mutu tertinggi, dilandasi kecerdasan dan
+keluhuran budi, ditopang Teknologi Informasi dan Komunikasi
+pada tahun 2020.</string>
+    <string name="visi_prodi">Menjadi Program Studi Ilmu Komunikasi yang unggul di Indonesia
+dengan standar mutu tertinggi, dilandasi kecerdasan dan
+keluhuran budi, ditopang Teknologi Informasi dan Komunikasi
+pada tahun 2020.</string>
+    <string name="misi_fakultas1">Menyelenggarakan pendidikan, penelitian dan pengabdian
+ masyarakat di bidang Ilmu Komunikasi untuk menghasilkan
+ lulusan yang unggul, cerdas dan berbudi luhur serta mampu
+ bersaing di dunia kerja.</string>
+    <string name="misi_fakultas2">Menyelenggarakan kerjasama dengan institusi pemerintah
+ maupun swasta dengan prinsip kesetaraan dan kemanfaatan.</string>
+    <string name="misi_fakultas3">Menerapkan tata kelola berbasis sistem mutu demi terwujudnya
+ kredibilitas, transparansi, akuntabilitas, tanggung jawab dan
+ keadilan.</string>
+    <string name="misi_fakultas4">Meningkatkan kualitas kehidupan sivitas akademika Fakultas
+ Ilmu Komunikasi Universitas Budi Luhur.</string>
+    <string name="misi_prodi1">Menyelenggarakan pendidikan, penelitian dan pengabdian
+ masyarakat yang unggul di bidang Ilmu Komunikasi yang
+ didukung oleh teknologi informasi.</string>
+    <string name="misi_prodi2">Menyelenggarakan program studi berbasis sistem mutu, dan
+ membangun kerjasama dengan berbagai institusi yang
+ relevan di bidang Ilmu Komunikasi.</string>
+    <string name="misi_prodi3">Menerapkan kurikulum berbasis kompetensi yang adaptif
+ terhadap kebutuhan mayarakat.</string>
+    <string name="alamat_BL">
+        Jl.Raya Ciledug. Petukangan Utara,\nKebayoran Lama\nJakarta Selatan 12260</string>
+    <string name="UBL">Universitas Budi Luhur</string>
+    <string name="no_contact">Telepon : 021 5853753</string>
+    <string name="web_contact">Website : www.budiluhur.ac.id</string>
+    <string name="brochure_broadcast">
+        <![CDATA[
+        <p align="justify">
+            Peserta studi akan diarahkan menjadi seorang Ahli
+            Komunikasi yang sekaligus <b>#siapkreatif</b> untuk melahirkan
+            produk-produk jurnalistik penyiaran yang dibutuhkan
+            masyarakat dan tentu sesuai kode etik jurnalistik.
+        </p>
+        <p align="justify">
+            Konsep dan teori komunikasi yang diterima peserta
+            studi akan ditambah dengan pemahaman konsep jurnalistik
+            penyiaran. Mengikuti perkembangan teknologi komunikasi saat ini,
+            peserta studi tidak hanya diajak untuk buktikan #siapkreatif dalam melahirkan
+            produk jurnalistik untuk televisi, radio melainkan juga
+            mewujudkan produk jurnalistik untuk new media.
+        </p>
+        <p align="justify">
+            Mata kuliah yang dapat diunggulkan untuk peminatan ini antara lain:<br/>
+            <b>Produksi Dokumenter, Teknik Penyiar, Teknik Kamera, Manajemen
+            Media, Fotografi Jurnalistik, Teknik Liputan, Jurnalistik Online</b>
+        </p>
+        <p align="justify">
+            Peserta studi dipersiapkan untuk dapat masuk ke industri
+            penyiaran masa depan seperti menjadi : Reporter, Camera
+            Person, News Anchor, News Producer, Program Director.
+            Selain itu menghadapi era new media, peserta studi
+            juga akan dirancang menjadi seorang multi talenta,
+            seperti Video Journalist sekaligus siap menjadi
+            pengelola portal berita online.
+        </p>
+        ]]>
+    </string>
+    <string name="brochure_public">
+        <![CDATA[
+            <p align="justify">
+                Melalui peminatan ini, peserta studi diharapkan dapat
+                menjadi Ahli Komunikasi dengan kompetensi melahirkan
+                solusi dan strategi-strategi Public Relations yang berguna
+                untuk kebutuhan sebuah lembaga/organisasi, baik untuk
+                pemerintah ataupun swasta dan bisa juga untuk kebutuhan
+                personal branding seorang profesional.</p>
+            <p align="justify">
+                Mata kuliah yang dapat diunggulkan untuk peminatan ini antara lain:<br/>
+                <b>Manajemen Krisis Public Relations, Presentasi, Lobi dan Negoisasi,
+                Produksi Media PR (media konvensional dan new media), Riset
+                Public Relations, Corporate Social Responsibility, Event
+                Management, Corporate Public Relations</b></p>
+            <p align="justify">
+                Prospek karir lulusan peminatan Public Relations yaitu PR Officer,
+                Juru Bicara, Event Supervisor, Pengelola Media Internal, Campaign
+                Manager, Personal Branding Consultant. Agar mampu memenuhi
+                kebutuhan komunikasi yang saat ini berkembang, peserta studi
+                juga akan dibekali kemampuan untuk mengelola teknik humas
+                di new media, seperti pengelolaan social media, pemanfaatan
+                new media sebagai sarana penyampaian pesan
+                (komunikasi publik).</p>
+        ]]>
+    </string>
+    <string name="brochure_visual">
+        <![CDATA[
+            <p align="justify">
+                Melalui peminatan ini, peserta studi akan diajak
+                untuk dapat menjadi seorang Ahli Komunikasi yang
+                multi talenta dalam penerapannya di ruang lingkup
+                Komunikasi Visual. Peserta studi akan dipersiapkan
+                untuk terjun ke dalam industri kreatif yang peluang
+                berkembangnya saat ini sangat besar apalagi didukung
+                dengan program pemerintah.</p>
+            <p align="justify">
+                Mata kuliah yang dapat diunggulkan untuk peminatan ini
+                antara lain: <br/><b>3D Model, Digital Ilustrasi, Brand & Positioning,
+                Desain Interaktif, Manual Drawing, Typography, Fotografi
+                Visual, Teknik Sinematograf</b></p>
+            <p align="justify">
+                Peminatan ini akan fokus membentuk peserta studi agar
+                <b>#siapkreatif</b> melahirkan karya komunikasi visual yang
+                bermanfaat untuk masyarakat seperti mampu
+                mengantisipasi persoalan komunikasi dalam masyarakat
+                melalui visualisasi. Lulusan nantinya diharapkan menjadi
+                Digital Animator, Sinematografer, Web Designer, Game
+                Designer, Digital Illustrator, tim Creative Design. Hasil karya
+                peserta studi berupa desain, animasi, infografis, videografis, motion
+                graphic diharapkan dapat dimanfaatkan untuk media
+                televisi, media internet, media game bahkan
+                juga media film.</p>
+        ]]>
+    </string>
+    <string name="brochure_digital">
+        <![CDATA[
+            <p align="justify">
+                Industri periklanan semakin berkembang, tidak hanya
+                menyajikan produk dalam bentuk media cetak ataupun
+                media konvensional seperti radio dan televisi. Industri periklanan
+                saat ini juga telah bergerak masuk ke dalam ranah new media,
+                dengan pola masuk ke dalam mobile ads. Peminatan ini juga
+                berharap peserta studi akan mampu membuat konsep periklanan
+                baru yang <b>#siapkreatif</b> dan kompetitif, sehingga mampu
+                bersaing.</p>
+            <p align="justify">
+                Mata kuliah yang dapat diunggulkan untuk peminatan ini antara
+                lain: <br/><b>Penulisan Naskah Iklan, Konsep Kreatif Periklanan, Produksi
+                Iklan Audio Visual, Produksi Iklan Digital, Riset Periklanan,
+                Advertising Campaign, Perencanaan Media.</b></p>
+            <p align="justify">
+                Peserta studi akan dipersiapkan menjadi Ahil Komunikasi di
+                ruang lingkup periklanan, yang tidak hanya mampu mengelola
+                pesan kreatif dalam bentuk karya cipta iklan. Tetapi, juga peserta studi
+                akan diarahkan mampu melahirkan konsep komunikasi pemasaran
+                yang lebih luas. Peminatan ini juga tidak menutup kemungkinan
+                melahirkan seorang Ahli Komunikasi yang mampu menjadi
+                peneliti dalam bidang komunikasi pemasaran dan periklanan.</p>
+        ]]>
+    </string>
+    <string name="brochure_newmedia">
+        <![CDATA[
+            <p align="justify">
+                Perkembangan teknologi informasi dan komunikasi
+                yang saat ini sangat cepat dan ditunjukkan dengan
+                pemanfaatan teknologi internet dan new media yang
+                semakin tinggi, menciptakan berkembangnya pola
+                komunikasi. Dalam konsentrasi baru ini, peserta studi
+                akan diajak untuk melaksanakan kajian terhadap hadirnya
+                new media, mengembangkan konsep kreatif aplikasi new
+                media, selain itu juga melakukan analisis konsep fitur aplikasi
+                new media dan cara penggunaannya.</p>
+            <p align="justify">
+                Mata kuliah yang dapat diunggulkan untuk peminatan ini
+                antara lain: <br/><b>Writing Skill for New Media, Digital Photography,
+                Video for Web, Internet Marketing, Personal
+                Branding (w/ Digital Media), Cybercrime, Creativepreneurship.</b></p>
+            <p align="justify">
+                Melalui konsentrasi ini, peserta studi yang termasuk dalam
+                Generasi <b>Millenials</b>, akan diajak untuk mengembangkan
+                ide kreatif komunikasi melalui new media. Pemanfaatan
+                social media, pengembangan social media, optimalisasi
+                penyampaian pesan dalam konvergensi media.</p>
+        ]]>
+    </string>
+</resources>

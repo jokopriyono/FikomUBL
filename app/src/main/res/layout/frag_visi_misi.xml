@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <id.ac.budiluhur.fikom.fikomubl.MontserratBoldTextview
+            android:text="VISI"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+            android:text="@string/judul_fakultas"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+            android:gravity="center"
+            android:text="@string/visi_fakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+            android:text="@string/judul_prodi"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+            android:gravity="center"
+            android:text="@string/visi_prodi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratBoldTextview
+            android:text="MISI"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+            android:text="@string/judul_fakultas"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="1."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_fakultas1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="2."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_fakultas2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="3."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_fakultas3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="4."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_fakultas4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+        <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+        android:text="@string/judul_prodi"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="1."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_prodi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="2."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_prodi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="3."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
+                android:text="@string/misi_prodi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

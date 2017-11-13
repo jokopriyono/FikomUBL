@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/v_home"
+            android:title="Home" />
+    </group>
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fimi"
+            android:icon="@drawable/v_visimisi"
+            android:title="Visi Misi" />
+    </group>
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/v_location"
+            android:title="Location" />
+    </group>
+    <group android:id="@+id/group4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_brochure"
+            android:icon="@drawable/v_brochure"
+            android:title="Program Selection" />
+    </group>
+    <group android:id="@+id/group5" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/v_contact"
+            android:title="Contact" />
+    </group>
+
+</menu>
