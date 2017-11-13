@@ -24,7 +24,6 @@ import id.ac.budiluhur.fikom.fikomubl.R;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
     public HomeFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -32,8 +31,8 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         super.onCreate(savedInstanceState);
     }
 
-    SliderLayout slider;
-    ImageView imgLMK, imgMGT, imgRBL, imgBLTV;
+    private SliderLayout slider;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,17 +41,17 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         setHasOptionsMenu(true);
 
         slider = (SliderLayout)view.findViewById(R.id.slider_home_screen);
-        imgBLTV = (ImageView)view.findViewById(R.id.imgBLTV);
-        imgLMK = (ImageView)view.findViewById(R.id.imgLMK);
-        imgMGT = (ImageView)view.findViewById(R.id.imgMGT);
-        imgRBL = (ImageView)view.findViewById(R.id.imgRBL);
+        ImageView imgBLTV = (ImageView)view.findViewById(R.id.imgBLTV);
+        ImageView imgLMK = (ImageView)view.findViewById(R.id.imgLMK);
+        ImageView imgMGT = (ImageView)view.findViewById(R.id.imgMGT);
+        ImageView imgRBL = (ImageView)view.findViewById(R.id.imgRBL);
 
         imgBLTV.setOnClickListener(this);
         imgLMK.setOnClickListener(this);
         imgMGT.setOnClickListener(this);
         imgRBL.setOnClickListener(this);
 
-        HashMap<String,Integer> img_maps = new HashMap<String, Integer>();
+        HashMap<String,Integer> img_maps = new HashMap<>();
         img_maps.put("Program Studi Ilmu Komunikasi",R.drawable.slide_1);
         img_maps.put("Testimoni",R.drawable.slide_2);
 
@@ -97,8 +96,6 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
             }
         });
-
-
         return view;
     }
 

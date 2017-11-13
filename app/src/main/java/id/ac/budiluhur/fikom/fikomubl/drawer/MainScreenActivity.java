@@ -1,9 +1,9 @@
 package id.ac.budiluhur.fikom.fikomubl.drawer;
 
-
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -48,7 +48,7 @@ public class MainScreenActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setTitle(null);
         toolbar_title = (TextView)findViewById(R.id.toolbar_title);
-        toolbar_title.setText("HOME");
+        setTitle("HOME");
         //Typeface tf = Typeface.createFromAsset(getApplicationContext().getAssets(), "fonts/Montserrat-Bold.otf");
         //setSupportActionBar(toolbar);
 
@@ -57,7 +57,7 @@ public class MainScreenActivity extends AppCompatActivity {
         drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.setDrawerListener(toggle);
+        drawer.addDrawerListener(toggle);
         toggle.syncState();
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -91,9 +91,7 @@ public class MainScreenActivity extends AppCompatActivity {
             }
         };
 
-        if (mPendingRunnable != null) {
-            mHandler.post(mPendingRunnable);
-        }
+        mHandler.post(mPendingRunnable);
 
         //Closing drawer on item click
         drawer.closeDrawers();
@@ -105,7 +103,7 @@ public class MainScreenActivity extends AppCompatActivity {
     private void setUpNavigationView() {
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.nav_home:
                         navItemIndex = 0;
@@ -148,22 +146,22 @@ public class MainScreenActivity extends AppCompatActivity {
     private Fragment getHomeFragment() {
         switch (navItemIndex){
             case 0:
-                toolbar_title.setText("HOME");
+                setTitle("HOME");
                 return new HomeFragment();
             case 1:
-                toolbar_title.setText("VISI & MISI");
+                setTitle("VISI & MISI");
                 return new VisiMisiFragment();
             case 2:
-                toolbar_title.setText("LOCATION");
+                setTitle("LOCATION");
                 return new LocationFragment();
             case 3:
-                toolbar_title.setText("PROGRAM SELECTION");
+                setTitle("PROGRAM SELECTION");
                 return new BrochureFragment();
             case 4:
-                toolbar_title.setText("CONTACT");
+                setTitle("CONTACT");
                 return new ContactFragment();
             default:
-                toolbar_title.setText("HOME");
+                setTitle("HOME");
                 return new HomeFragment();
         }
     }

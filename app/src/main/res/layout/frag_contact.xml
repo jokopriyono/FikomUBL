@@ -10,15 +10,18 @@
     <ImageView
         app:srcCompat="@drawable/v_logo"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
-    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-        android:paddingLeft="30dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/minus" />
+    <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
         android:text="@string/no_contact"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-        android:paddingLeft="30dp"
+    <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+        android:paddingStart="30dp"
+        android:paddingEnd="0dp"
         android:text="@string/web_contact"
         android:textColor="@android:color/black"
         android:layout_width="wrap_content"

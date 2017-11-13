@@ -11,7 +11,6 @@ import id.ac.budiluhur.fikom.fikomubl.R;
 public class VisiMisiFragment extends Fragment {
 
     public VisiMisiFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -22,10 +21,7 @@ public class VisiMisiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.frag_visi_misi, container, false);
-
-        return view;
+        return inflater.inflate(R.layout.frag_visi_misi, container, false);
     }
 
 }

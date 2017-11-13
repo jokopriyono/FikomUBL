@@ -1,263 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <ScrollView
+    android:layout_height="match_parent"
+    android:paddingTop="8dp">
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="8dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
+            android:id="@+id/konten1"
+            android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
             <LinearLayout
-                android:id="@+id/konten1"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:textColor="@android:color/black"
-                        android:paddingLeft="20dp"
-                        android:textSize="18sp"
-                        android:text="Fikom Testimoni"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:textColor="@android:color/black"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="18sp"
+                    android:text="@string/fikom_testimoni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
                 <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
             </LinearLayout>
-            <LinearLayout
-                android:id="@+id/konten2"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:paddingLeft="20dp"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:text="Konsentrasi Broadcast Journalism"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/montserratTextview" />
-
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
-                <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/konten3"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:paddingLeft="20dp"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:text="Konsentrasi Public Relations"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/montserratTextview2" />
-
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
-                <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/konten4"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:paddingLeft="20dp"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black"
-                        android:text="Konsentrasi Visual Communication"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
-                <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/konten5"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:paddingLeft="20dp"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black"
-                        android:text="Konsentrasi Digital Advertising"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
-                <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/konten6"
-                android:background="@color/colorPrimary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="2dp"
-                android:layout_marginBottom="2dp"
-                android:paddingTop="15dp"
-                android:paddingBottom="15dp"
-                android:gravity="center_vertical"
-                android:clickable="true"
-                android:foreground="?selectableItemBackground">
-                <LinearLayout
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:paddingBottom="10dp"
-                    android:paddingTop="10dp">
-                    <id.ac.budiluhur.fikom.fikomubl.MontserratTextview
-                        android:paddingLeft="20dp"
-                        android:textSize="18sp"
-                        android:textColor="@android:color/black"
-                        android:text="Konsentrasi New Media"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-                    <ImageView
-                        android:src="@drawable/line"
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
-                </LinearLayout>
-                <ImageView
-                    app:srcCompat="@drawable/v_next"
-                    android:scaleType="centerInside"
-                    android:padding="13dp"
-                    android:layout_weight="0.3"
-                    android:layout_width="0dp"
-                    android:layout_height="50dp" />
-            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
         </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+        <LinearLayout
+            android:id="@+id/konten2"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="@string/konsentrasi_broadcast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/montserratTextview" />
+                <ImageView
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
+            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/konten3"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:text="@string/konsentrasi_public"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/montserratTextview2" />
+                <ImageView
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
+            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/konten4"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/konsentrasi_visual"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
+            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/konten5"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/konsentrasi_digital"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
+            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/konten6"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground"
+            android:focusable="true">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+                <id.ac.budiluhur.fikom.fikomubl.ui.MontserratTextview
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/konsentrasi_new_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:contentDescription="@string/minus" />
+            </LinearLayout>
+            <ImageView
+                app:srcCompat="@drawable/v_next"
+                android:scaleType="centerInside"
+                android:padding="13dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/minus" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

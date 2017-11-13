@@ -11,7 +11,6 @@ import id.ac.budiluhur.fikom.fikomubl.R;
 
 public class ContactFragment extends Fragment {
     public ContactFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -22,10 +21,8 @@ public class ContactFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.frag_contact, container, false);
         setHasOptionsMenu(true);
-
 
         return view;
     }

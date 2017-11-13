@@ -1,4 +1,4 @@
-package id.ac.budiluhur.fikom.fikomubl;
+package id.ac.budiluhur.fikom.fikomubl.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,27 +7,27 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
+import id.ac.budiluhur.fikom.fikomubl.R;
+
 public class DetailBrochureActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-    private WebView webView;
-    private ImageView imgJudul, imgTestimoni;
-    private String KEY = "konten";
+    static String KEY = "konten";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_brochure);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-        webView = (WebView)findViewById(R.id.webview);
-        imgJudul = (ImageView)findViewById(R.id.img_judul);
-        imgTestimoni = (ImageView)findViewById(R.id.img_testimoni);
+        WebView webView = (WebView) findViewById(R.id.webview);
+        ImageView imgJudul = (ImageView) findViewById(R.id.img_judul);
+        ImageView imgTestimoni = (ImageView) findViewById(R.id.img_testimoni);
 
         String cek = getIntent().getStringExtra(KEY);
         switch (cek){

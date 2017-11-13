@@ -1,15 +1,13 @@
-package id.ac.budiluhur.fikom.fikomubl;
+package id.ac.budiluhur.fikom.fikomubl.ui;
 
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-/**
- * Created by Joko Priyono on 23/10/2016.
- */
+import id.ac.budiluhur.fikom.fikomubl.FontCache;
 
-public class MontserratTextview extends TextView {
+public class MontserratTextview extends android.support.v7.widget.AppCompatTextView {
 
     public MontserratTextview(Context context) {
         super(context);

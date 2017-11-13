@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import id.ac.budiluhur.fikom.fikomubl.DetailBrochureActivity;
+import id.ac.budiluhur.fikom.fikomubl.activity.DetailBrochureActivity;
 import id.ac.budiluhur.fikom.fikomubl.R;
 
 public class BrochureFragment extends Fragment implements View.OnClickListener {
@@ -22,8 +22,8 @@ public class BrochureFragment extends Fragment implements View.OnClickListener {
         super.onCreate(savedInstanceState);
     }
 
-    private LinearLayout konten1, konten2, konten3, konten4, konten5, konten6;
-    private String KEY = "konten";
+    protected static String KEY = "konten";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,12 +31,12 @@ public class BrochureFragment extends Fragment implements View.OnClickListener {
         View view = inflater.inflate(R.layout.frag_brochure, container, false);
         setHasOptionsMenu(true);
 
-        konten1 = (LinearLayout)view.findViewById(R.id.konten1);
-        konten2 = (LinearLayout)view.findViewById(R.id.konten2);
-        konten3 = (LinearLayout)view.findViewById(R.id.konten3);
-        konten4 = (LinearLayout)view.findViewById(R.id.konten4);
-        konten5 = (LinearLayout)view.findViewById(R.id.konten5);
-        konten6 = (LinearLayout)view.findViewById(R.id.konten6);
+        LinearLayout konten1 = (LinearLayout)view.findViewById(R.id.konten1);
+        LinearLayout konten2 = (LinearLayout)view.findViewById(R.id.konten2);
+        LinearLayout konten3 = (LinearLayout)view.findViewById(R.id.konten3);
+        LinearLayout konten4 = (LinearLayout)view.findViewById(R.id.konten4);
+        LinearLayout konten5 = (LinearLayout)view.findViewById(R.id.konten5);
+        LinearLayout konten6 = (LinearLayout)view.findViewById(R.id.konten6);
 
         konten1.setOnClickListener(this);
         konten2.setOnClickListener(this);

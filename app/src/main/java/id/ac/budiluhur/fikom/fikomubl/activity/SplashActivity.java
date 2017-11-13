@@ -1,10 +1,11 @@
-package id.ac.budiluhur.fikom.fikomubl;
+package id.ac.budiluhur.fikom.fikomubl.activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import id.ac.budiluhur.fikom.fikomubl.R;
 import id.ac.budiluhur.fikom.fikomubl.drawer.MainScreenActivity;
 
 public class SplashActivity extends AppCompatActivity {

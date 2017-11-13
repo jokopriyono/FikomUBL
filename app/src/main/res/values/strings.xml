@@ -177,4 +177,20 @@ pada tahun 2020.</string>
                 penyampaian pesan dalam konvergensi media.</p>
         ]]>
     </string>
+    <string name="minus">-</string>
+    <string name="program_selection">PROGRAM SELECTION</string>
+    <string name="mobile">MOBILE</string>
+    <string name="fikom_testimoni">Fikom Testimoni</string>
+    <string name="konsentrasi_broadcast">Konsentrasi Broadcast Journalism</string>
+    <string name="konsentrasi_public">Konsentrasi Public Relations</string>
+    <string name="konsentrasi_visual">Konsentrasi Visual Communication</string>
+    <string name="konsentrasi_digital">Konsentrasi Digital Advertising</string>
+    <string name="konsentrasi_new_media">Konsentrasi New Media</string>
+    <string name="fikom">FIKOM</string>
+    <string name="visi">VISI</string>
+    <string name="misi">MISI</string>
+    <string name="_1">1.</string>
+    <string name="_2">2.</string>
+    <string name="_3">3.</string>
+    <string name="_4">4.</string>
 </resources>

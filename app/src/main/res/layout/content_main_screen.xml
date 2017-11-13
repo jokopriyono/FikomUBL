@@ -4,12 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
-
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/MyMaterialTheme.AppBarOverlay">
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -17,7 +15,7 @@
             android:background="@drawable/toolbar"
             app:popupTheme="@style/MyMaterialTheme.PopupOverlay"
             android:theme="@style/ThemeOverlay.AppCompat.Dark">
-            <id.ac.budiluhur.fikom.fikomubl.MontserratBoldTextview
+            <id.ac.budiluhur.fikom.fikomubl.ui.MontserratBoldTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorAccent"

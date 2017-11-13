@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_detail_brochure"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/white"
-    tools:context="id.ac.budiluhur.fikom.fikomubl.DetailBrochureActivity">
+    android:background="@android:color/white">
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/MyMaterialTheme.AppBarOverlay">
-
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
@@ -21,50 +18,47 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             app:navigationIcon="@drawable/v_back">
-            <id.ac.budiluhur.fikom.fikomubl.MontserratBoldTextview
+            <id.ac.budiluhur.fikom.fikomubl.ui.MontserratBoldTextview
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorAccent"
                 android:textSize="20sp"
-                android:text="PROGRAM SELECTION"
+                android:text="@string/program_selection"
                 android:id="@+id/toolbar_title" />
         </android.support.v7.widget.Toolbar>
-
     </android.support.design.widget.AppBarLayout>
     <ImageView
         android:visibility="gone"
         android:id="@+id/img_judul"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="0dp"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:scaleType="fitStart"/>
+        android:scaleType="fitStart"
+        android:contentDescription="@string/minus" />
     <ImageView
         android:visibility="gone"
         android:id="@+id/img_testimoni"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="0dp"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:contentDescription="@string/minus" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+        <WebView
+            android:id="@+id/webview"
             android:paddingBottom="@dimen/activity_vertical_margin"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
             android:paddingTop="@dimen/activity_vertical_margin"
-            android:orientation="vertical">
-            <WebView
-                android:paddingTop="10dp"
-                android:id="@+id/webview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
     </ScrollView>
 </LinearLayout>

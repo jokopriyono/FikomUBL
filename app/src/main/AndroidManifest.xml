@@ -28,14 +28,14 @@
         <activity
             android:name="id.ac.budiluhur.fikom.fikomubl.drawer.MainScreenActivity"
             android:label="@string/app_name"/>
-        <activity android:name="id.ac.budiluhur.fikom.fikomubl.SplashActivity">
+        <activity android:name="id.ac.budiluhur.fikom.fikomubl.activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="id.ac.budiluhur.fikom.fikomubl.DetailBrochureActivity"
+        <activity android:name="id.ac.budiluhur.fikom.fikomubl.activity.DetailBrochureActivity"
             android:parentActivityName="id.ac.budiluhur.fikom.fikomubl.drawer.MainScreenActivity"/>
     </application>
 

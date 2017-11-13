@@ -4,7 +4,7 @@ import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -29,12 +29,10 @@ import id.ac.budiluhur.fikom.fikomubl.R;
 
 
 public class LocationFragment extends Fragment implements GoogleMap.OnMarkerClickListener, LocationListener {
-    MapView mMapView;
+    private MapView mMapView;
     private GoogleMap googleMap;
-    private View view;
 
     public LocationFragment() {
-        // Required empty public constructor
     }
 
     @Override
@@ -54,15 +52,26 @@ public class LocationFragment extends Fragment implements GoogleMap.OnMarkerClic
             requestPermission();
         } else {
             mMapView.onResume(); // needed to get the map to display immediately
-             try {
-             MapsInitializer.initialize(getActivity().getApplicationContext());
-             } catch (Exception e) {
-             e.printStackTrace();
-             }
-             mMapView.getMapAsync(new OnMapReadyCallback() {
-                @Override public void onMapReady(GoogleMap mMap) {
+            try {
+                MapsInitializer.initialize(getActivity().getApplicationContext());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            mMapView.getMapAsync(new OnMapReadyCallback() {
+                @Override
+                public void onMapReady(GoogleMap mMap) {
                     googleMap = mMap;
 
+                    if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+                        return;
+                    }
                     googleMap.setMyLocationEnabled(true);
 
                     LatLng BL = new LatLng(-6.2356666,106.74773);
@@ -86,11 +95,7 @@ public class LocationFragment extends Fragment implements GoogleMap.OnMarkerClic
 
     private boolean checkPermission() {
         int result = ContextCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION);
-        if (result == PackageManager.PERMISSION_GRANTED){
-            return true;
-        } else {
-            return false;
-        }
+        return result == PackageManager.PERMISSION_GRANTED;
     }
 
     @Override
@@ -138,13 +143,15 @@ public class LocationFragment extends Fragment implements GoogleMap.OnMarkerClic
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String permissions[], @NonNull int[] grantResults) {
         switch (requestCode) {
             case 1:
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    Snackbar.make(view,"Permission Granted, Now you can access location data.",Snackbar.LENGTH_LONG).show();
+//                    Snackbar.make(view,"Permission Granted, Now you can access location data.",Snackbar.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "Permission Granted, Now you can access location data.", Toast.LENGTH_SHORT).show();
                 } else {
-                    Snackbar.make(view,"Permission Denied, You cannot access location data.", Snackbar.LENGTH_LONG).show();
+//                    Snackbar.make(view,"Permission Denied, You cannot access location data.", Snackbar.LENGTH_LONG).show();
+                    Toast.makeText(getContext(), "Permission Denied, You cannot access location data.", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }
